@@ -1,0 +1,32 @@
+title: KOSLAB PLT
+registration_id: LLP0045561-LGN
+tagline: Building Digital Sovereignty With Open Source & AI
+description: Sovereign data platforms built with 100% open source technologies, on-premise or in local cloud, free from foreign influence.
+url: "https://koslab.github.io"
+baseurl: ""
+logo: /assets/css/images/koslab-logo-2026.png
+logo_mark: /assets/css/images/koslab-logo-mark-2026.png
+
+# Site Structure
+business_types:
+  - solution architecture consulting
+  - fractional architect
+  - sovereign data platform
+  - open source software support
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js
+  - vendor/
+  - .github/
+  - Gemfile
+  - Gemfile.lock
