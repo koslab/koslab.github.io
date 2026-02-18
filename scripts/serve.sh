@@ -4,6 +4,7 @@
 
 echo "🚀 Building Tailwind CSS..."
 npm run build:css
+bundle install
 
 echo "✨ Starting Jekyll server..."
 # Run Jekyll serve with forwarded arguments.
