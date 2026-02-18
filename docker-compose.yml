@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "4000:4000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.jekyll-cache
+      - /app/_site
+    environment:
+      - JEKYLL_ENV=development
+    command: >
+      bash -c "npm run watch:css & ./scripts/serve.sh --host 0.0.0.0 --livereload"

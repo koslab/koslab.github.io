@@ -6,7 +6,7 @@ echo "🚀 Building Tailwind CSS..."
 npm run build:css
 
 echo "✨ Starting Jekyll server..."
-# Run Jekyll serve.
+# Run Jekyll serve with forwarded arguments.
 # Note: If you want Tailwind to watch for changes while Jekyll is running,
 # you can run 'npm run watch:css' in a separate terminal or background it here.
-bundle exec jekyll serve
+bundle exec jekyll serve "$@"
