@@ -5,9 +5,6 @@ services:
       - "4000:4000"
     volumes:
       - .:/app
-      - /app/node_modules
-      - /app/.jekyll-cache
-      - /app/_site
     environment:
       - JEKYLL_ENV=development
     command: >

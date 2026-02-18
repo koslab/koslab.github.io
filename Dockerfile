@@ -10,17 +10,24 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
     && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
-WORKDIR /app
+# Gem isolation
+ENV BUNDLE_PATH=/usr/local/bundle
+ENV BUNDLE_BIN=/usr/local/bundle/bin
+ENV PATH="${BUNDLE_BIN}:/node_modules/.bin:${PATH}"
 
-# Install dependencies first for better caching
-COPY Gemfile Gemfile.lock package.json package-lock.json ./
+# Install dependencies outside of /app for volume mount compatibility
+COPY package.json package-lock.json /
+RUN cd / && npm install
+
+COPY Gemfile Gemfile.lock /
 RUN bundle install
-RUN npm install
+
+WORKDIR /app
 
 # Copy the rest of the application
 COPY . .
 
-# Build Tailwind CSS
+# Build Tailwind CSS (will find node_modules in /)
 RUN npm run build:css
 
 # Final stage
@@ -38,10 +45,16 @@ RUN apt-get update -qq && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
+# Gem isolation
+ENV BUNDLE_PATH=/usr/local/bundle
+ENV BUNDLE_BIN=/usr/local/bundle/bin
+ENV PATH="${BUNDLE_BIN}:/node_modules/.bin:${PATH}"
+
 WORKDIR /app
 
 # Copy dependencies from builder
 COPY --from=builder /usr/local/bundle /usr/local/bundle
+COPY --from=builder /node_modules /node_modules
 COPY --from=builder /app /app
 
 # Make serve.sh executable
