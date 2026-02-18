@@ -14,10 +14,60 @@
   p {
     @apply text-gray-600 mb-4 leading-relaxed;
   }
+
+  img {
+    @apply inline align-bottom;
+  }
 }
 
 .logo-white {
   filter: brightness(0) invert(1);
 }
 
-@layer utilities {}
+@layer utilities {
+  /* Agreements Page Styles - Applied via body.agreements-page */
+
+  .agreements-page main {
+    @apply max-w-6xl mx-auto py-12 px-4;
+  }
+
+  /* Hero Section */
+  .agreements-page h1 {
+    @apply text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 text-center mt-4;
+  }
+
+  .agreements-page h1+p {
+    @apply text-xl text-gray-600 max-w-2xl mx-auto text-center mb-8 pb-6 border-b;
+  }
+
+  /* Section Headers */
+  .agreements-page h2 {
+    @apply text-2xl font-bold text-gray-900 mb-4 mt-8;
+  }
+
+  /* Document List */
+  .agreements-page ul {
+    @apply space-y-2 ml-2 md:ml-4;
+  }
+
+  .agreements-page li {
+    @apply flex items-center text-xl text-gray-900;
+  }
+
+  .agreements-page li a {
+    @apply no-underline inline-flex items-center hover:text-brand transition-colors;
+  }
+
+  .agreements-page .icon-download {
+    @apply w-5 h-5 ml-2 opacity-70 transition-opacity;
+  }
+
+  .agreements-page li a:hover .icon-download {
+    @apply opacity-100;
+  }
+
+  /* Contact Support Button */
+  .btn-legal-support {
+    @apply bg-brand text-white px-8 py-3 rounded-lg font-bold hover:bg-brand-light transition-all transform hover:scale-105 shadow-lg block mt-6 md:mt-0;
+  }
+}
