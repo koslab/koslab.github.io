@@ -33,10 +33,6 @@
 @layer utilities {
   /* Agreements Page Styles - Applied via body.agreements-page */
 
-  .agreements-page main {
-    @apply max-w-6xl mx-auto py-12 px-4;
-  }
-
   /* Hero Section */
   .agreements-page h1 {
     @apply text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 text-center mt-4;
@@ -56,11 +52,11 @@
     @apply space-y-2 ml-2 md:ml-4;
   }
 
-  .agreements-page li {
+  .agreements-page main li {
     @apply flex items-center text-xl text-gray-900;
   }
 
-  .agreements-page li a {
+  .agreements-page main li a {
     @apply no-underline inline-flex items-center hover:text-brand transition-colors;
   }
 
