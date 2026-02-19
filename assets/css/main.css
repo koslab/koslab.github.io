@@ -35,11 +35,11 @@
 
   /* Hero Section */
   .agreements-page h1 {
-    @apply text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 text-center mt-4;
+    @apply text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 mt-4;
   }
 
   .agreements-page h1+p {
-    @apply text-xl text-gray-600 max-w-2xl mx-auto text-center mb-8 pb-6 border-b;
+    @apply text-xl text-gray-600 mx-auto mb-8 pb-6 border-b;
   }
 
   /* Section Headers */
@@ -53,7 +53,7 @@
   }
 
   .agreements-page main li {
-    @apply flex items-center text-xl text-gray-900;
+    @apply flex items-center text-lg text-gray-900;
   }
 
   .agreements-page main li a {
