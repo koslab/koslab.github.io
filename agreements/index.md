@@ -37,5 +37,5 @@ Standard legal frameworks and business documents to streamline our collaboration
 
 ## Agreement Templates
 
-- [Enterprise Agreement]({{ '/assets/agreements/enterprise-agreement-' | append: page.ea_version | append: '.odt' | relative_url }})
-- [Master Teaming Agreement]({{ '/assets/agreements/master-teaming-agreement-' | append: page.master_teaming_version | append: '.odt' | relative_url }})
+- [Enterprise Agreement]({{ '/assets/agreements/enterprise-agreement-' | append: page.ea_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
+- [Master Teaming Agreement]({{ '/assets/agreements/master-teaming-agreement-' | append: page.master_teaming_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
