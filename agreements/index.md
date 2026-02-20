@@ -10,19 +10,18 @@ whitelabel_terms_version: 20260218
 teaming_terms_version: 20260218
 ea_version: 20260218
 master_teaming_version: 20260218
+order_form_version: 20260220
+oppty_form_version: 20260220
 ---
 
-# Agreements & Forms
+# Forms & Terms Of Service
 
 Standard legal frameworks and business documents to streamline our collaboration and ensure transparency.
 
-<!--
 ## Business Forms
 
-- [Order Form]({{ '/assets/pdfs/order-form.odt' | relative_url }}) ![PDF Icon]({{ '/assets/images/icons/pdf.svg' | relative_url }}){: .icon-download }
-- [Opportunity Registration Form]({{ '/assets/pdfs/opportunity-registration-form.odt' | relative_url }}) ![PDF Icon]({{ '/assets/images/icons/pdf.svg' | relative_url }}){: .icon-download }
-
--->
+- [Order Form]({{ '/assets/order-form-' | append: page.order_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
+- [Opportunity Registration Form]({{ '/assets/pdfs/opportunity-registration-form-' | append: page.oppty_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
 
 ## Terms of Service
 
