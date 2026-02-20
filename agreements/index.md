@@ -20,8 +20,8 @@ Standard legal frameworks and business documents to streamline our collaboration
 
 ## Business Forms
 
-- [Order Form]({{ '/assets/order-form-' | append: page.order_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
-- [Opportunity Registration Form]({{ '/assets/pdfs/opportunity-registration-form-' | append: page.oppty_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
+- [Order Form]({{ '/assets/agreements/order-form-' | append: page.order_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
+- [Opportunity Registration Form]({{ '/assets/agreements/opportunity-registration-form-' | append: page.oppty_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
 
 ## Terms of Service
 
