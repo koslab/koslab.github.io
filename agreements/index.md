@@ -3,11 +3,11 @@ layout: default
 title: Agreements & Forms
 description: Standard legal terms and business forms for KOSLAB PLT.
 body_class: agreements-page
-general_terms_version: 20260218
-ps_terms_version: 20260218
-training_terms_version: 20260218
-whitelabel_terms_version: 20260218
-teaming_terms_version: v1.0.1
+general_terms_version: v1.0.0
+ps_terms_version: v1.0.0
+training_terms_version: v1.0.0
+whitelabel_terms_version: v1.0.0
+teaming_terms_version: v1.0.3
 ea_version: 20260218
 master_teaming_version: 20260218
 order_form_version: 20260220
