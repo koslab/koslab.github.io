@@ -12,6 +12,7 @@ ea_version: 20260218
 master_teaming_version: 20260218
 order_form_version: 20260220
 oppty_form_version: 20260220
+enterprise_license_version: v1.0.0
 ---
 
 # Forms & Terms Of Service
@@ -33,6 +34,10 @@ Standard legal frameworks and business documents to streamline our collaboration
 ## Pre-Sales Teaming Terms & Conditions
 
 - [General Teaming Terms and Conditions]({{ '/assets/agreements/general-teaming-terms-' | append: page.teaming_terms_version | append: '.pdf' | relative_url }}) ![PDF Icon]({{ '/assets/images/icons/pdf.svg' | relative_url }}){: .icon-download }
+
+## License Agreements
+
+- [Enterprise License Agreement]({{ '/assets/agreements/enterprise-license-agreement-' | append: page.enterprise_license_version | append: '.pdf' | relative_url }}) ![PDF Icon]({{ '/assets/images/icons/pdf.svg' | relative_url }}){: .icon-download }
 
 ## Agreement Templates
 
