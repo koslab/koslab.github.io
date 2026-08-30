@@ -11,7 +11,8 @@ teaming_terms_version: v1.0.3
 ea_version: 20260218
 master_teaming_version: 20260218
 order_form_version: 20260830
-oppty_form_version: 20260830
+reseller_form_version: 20260830
+oppty_form_version: 20260220
 enterprise_license_version: v1.0.0
 ---
 
@@ -22,6 +23,7 @@ Standard legal frameworks and business documents to streamline our collaboration
 ## Business Forms
 
 - [Order Form]({{ '/assets/agreements/order-form-' | append: page.order_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
+- [Partner / Reseller Order Form]({{ '/assets/agreements/reseller-order-form-' | append: page.reseller_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
 - [Opportunity Registration Form]({{ '/assets/agreements/opportunity-registration-form-' | append: page.oppty_form_version | append: '.odt' | relative_url }}) ![ODT Icon]({{ '/assets/images/icons/odt.svg' | relative_url }}){: .icon-download }
 
 ## Terms of Service
