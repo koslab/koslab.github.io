@@ -11,7 +11,7 @@ teaming_terms_version: v1.0.3
 ea_version: 20260218
 master_teaming_version: 20260218
 order_form_version: 20260830
-reseller_form_version: 20260830
+reseller_form_version: 20260901
 oppty_form_version: 20260220
 enterprise_license_version: v1.0.0
 ---
